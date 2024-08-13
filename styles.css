@@ -1,0 +1,94 @@
+/* General reset and styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://img.freepik.com/free-psd/3d-female-character-working-desk-with-laptop_23-2148938896.jpg?w=740&t=st=1723559704~exp=1723560304~hmac=36c7cbe46fc80db59689fe2e88c090037752ed5aaeed39c6b46bb4eab0e15c1b');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Container to center the content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Stopwatch styling */
+.stopwatch {
+    
+    background-image: url('https://img.freepik.com/free-photo/3d-travel-icon-with-couple_23-2151037310.jpg?t=st=1723560570~exp=1723564170~hmac=dc91bedcfa6873a98196b3744f5e6838da065effa236e1bbdcc1205de0eb70c4&w=1380');
+    image-rendering: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+}
+
+/* Time display styling */
+.time {
+    font-size: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Button styling */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #61dafb;
+    border: none;
+    border-radius: 10px;
+    color: #282c34;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #21a1f1;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Lap list styling */
+#laps {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+#laps li {
+    background-color: #2e323a;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#laps li:nth-child(odd) {
+    background-color: #3b4049;
+}
